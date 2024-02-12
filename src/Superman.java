@@ -1,28 +1,10 @@
-public class Superman implements Lutador{
+class Superman extends Personagem{
 
-   private int vida;
-   private int ataque;
-    private int defesa;
+   public Superman(){
+       super("Superman", 100);
+       this.dano = 20;
+       this.defesa = 5;
+   }
 
-    @Override
-    public void atacar(Lutador adversario){
-        adversario.getVida();
-    }
-    @Override
-    public void defender(){
-        this.defesa = 2;
-    }
-    @Override
-    public int getAtaque(){
-        return this.ataque;
-    }
-    @Override
-    public int getVida(){
-        return this.vida;
-    }
-
-    public void Refresh(){
-        this.defesa = 0;
-    }
 
 }

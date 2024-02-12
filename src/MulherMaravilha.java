@@ -1,23 +1,10 @@
-public class MulherMaravilha implements Lutador{
+class MulherMaravilha extends Personagem{
 
-    private int vida = 150;
-    int pontosAtaque = 17;
-    int pontosDefesa = 15;
-
-    @Override
-    public void atacar(Lutador adversario){
-
-    }
-    @Override
-    public void defender(int dano){
-
-    }
-    @Override
-    public int obterVida(){
-        return vida;
+    public MulherMaravilha(){
+        super("Mulher-Maravilha", 120);
+        this.dano = 17;
+        this.defesa = 6;
     }
 
-    public void descricao(){
-        System.out.println("Escolheu o Mulh e tem "+ obterVida()+" pontos de vida");
-    }
+
 }
