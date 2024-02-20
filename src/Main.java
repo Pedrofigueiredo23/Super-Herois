@@ -31,22 +31,22 @@ public class Main {
                     int escolha1 = scan.nextInt();
 
                     switch (escolha1) {
-                        case 1 -> {
+                        case 1 ->
                             lutador1.atacar(lutador2);
-                        }
-                        case 2 -> {
+
+                        case 2 ->
                             lutador2.atacar(lutador1);
-                        }
-                        case 3 ->{
+
+                        case 3 ->
                             lutador1.defender();
-                        }
-                        case 4 ->{
+
+                        case 4 ->
                             lutador2.defender();
-                        }
-                        default ->{
+
+                        default ->
                             System.out.println("Opção inválida");
 
-                        }
+                        
                     }
                 }
             }
